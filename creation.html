@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTOMATONS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Orbitron', sans-serif;  
+            background-color: #000;
+            height: 100vh;
+            overflow: hidden; 
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #000;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 28px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+        }
+
+        .navbar img {
+            height: 40px;
+            cursor: pointer;
+            margin-right: 10px; 
+        }
+
+        .navbar-left {
+            position: absolute;
+            top: 5px;
+            left: 20px;
+            display: flex; 
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 80px; /* Adjusted to shift up */
+            width: 100%;
+            height: 600px;
+            overflow: hidden; 
+        }
+
+        .panel {
+            flex: 1;
+            margin: 10px;
+            width: 250px; /* Increased width */
+            height: 350px; /* Increased height */
+            background-size: cover;
+            background-position: center;
+            transition: flex 0.5s ease;
+            border-radius: 20px;
+            overflow: hidden;
+            cursor: pointer;
+            z-index: 101;
+        }
+
+        .panel:hover {
+            flex: 5;
+        }
+
+        .hover-instruction {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px; /* Increased font size */
+            color: white;
+            font-family: 'Orbitron', sans-serif; 
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <a href="homepage.html"><img src="black home icon.jpg" alt="Link Image 1"></a>
+        </div>
+        Check out our wonderlust creations (hover & click on img)
+    </div>
+    <div class="hover-instruction">
+        Hover on these images, and when you select an image, it will give you a sneak peek into our wonderlust creations.
+    </div>
+    <div class="container">
+        <a href="c6.html" class="panel" style="background-image: url('t3.jpg');"></a>
+        <a href="c7.html" class="panel" style="background-image: url('t7.jpg');"></a>
+        <a href="c2.html" class="panel" style="background-image: url('t2.jpg');"></a>
+        <a href="c3.html" class="panel" style="background-image: url('t4.jpg');"></a>
+        <a href="c4.html" class="panel" style="background-image: url('t5.jpg');"></a>
+        <a href="c5.html" class="panel" style="background-image: url('t7.jpg');"></a>
+        <a href="c6.html" class="panel" style="background-image: url('t3.jpg');"></a>
+    </div>
+
+  
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Automatons</title>
+    <style>
+      body {
+        background-color: black;
+        padding: 0;
+        margin: 0;
+        font-family: "Orbitron", "Roboto";
+        color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+      }
+      .text-mask {
+        font-size: 6em;
+        font-weight: bold;
+        color: transparent;
+        position: relative;
+        overflow: hidden;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: url("aaaa.jpeg");
+        background-size: cover;
+        text-transform: uppercase;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        animation: scrollImage 2s linear infinite;
+      }
+
+      @keyframes scrollImage {
+        0% {
+          background-position: center top;
+        }
+        100% {
+          background-position: center bottom;
+        }
+      }
+      .button {
+        margin: 30px;
+      }
+      .button-in {
+        padding: 10px 20px;
+      }
+      .glow-btn {
+        margin-top: 40px;
+        padding: 15px 30px;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: white;
+        background-color: #333;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        position: relative;
+        text-transform: uppercase;
+        animation: glow 2s infinite alternate;
+      }
+
+      @keyframes fallDown {
+        0% {
+          opacity: 0;
+          transform: translateY(-50px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes glow {
+        0% {
+          box-shadow: 0 0 15px blue, 0 0 30px blueviolet, 0 0 45px violet,
+            0 0 60px purple;
+        }
+        50% {
+          box-shadow: 0 0 15px purple, 0 0 30px blue, 0 0 45px blueviolet,
+            0 0 60px violet;
+        }
+        100% {
+          box-shadow: 0 0 15px blueviolet, 0 0 30px purple, 0 0 45px blue,
+            0 0 60px violet;
+        }
+      }
+      .text_k {
+        font-weight: bold;
+        font-size: 1.4em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text-mask">Automatons</div>
+    <br /><br />
+    <p class="text_k">
+      if you have curiosity, passion to learn , and are true techno savy at
+      heart, then dare click below button!
+    </p>
+    <br />
+    <div class="button">
+      <button class="button-in glow-btn" onclick="goToPage()">I AM</button>
+    </div>
+
+    <script>
+      function goToPage() {
+        window.location.href = "homepage.html";
+      }
+    </script>
+  </body>
+</html>
